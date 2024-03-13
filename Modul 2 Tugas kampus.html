@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <title>Pengenalan Html Tingkat lanjut</title>
+    </head>
+    <body>
+        <strong>Pengenalan Html Tingkat lanjut</strong>
+        <hr/>
+        <h1>Hello World</h1>
+        <div>
+            <!--email,password,submit,file,hidden-->
+            <form action="" method="get"> <!--Method Get digunakan untuk meng - record nilai hasil form yang telah diinputkan oleh user ke dalam URL HTML -->
+                <p><input type="text" name="default_input" size="25"></p> <!-- Input Type adalah adalah sebuah element yang digunakan untuk seperi kotak teks, tombol radio, checkbox dan submit.Dan size digunakan untuk mengatur ukuran -->
+                <p><input type="text" name="dengan_placeholder" placeholder="Masukan nama anda" size="25"></p> <!-- Placeholder digunakan untuk membuat teks samar samar yang dapat memberikan contoh format data yang harus dimasukan oleh User Dan size digunakan untuk mengatur ukuran  -->            
+                <p><input type="text" name="dengan_readonly" value="Informatika" readonly size="25"></p> <!-- Readonly form digunakan untuk mencegah user mengubah data yang sudah ada. User hanya dapat membaca isi dari value namun tidak dapat mengubah value nya. -->              
+                <p><input type="text" name="dengan_disable" value="disable input" disabled size="25"></p> <!-- Sama seperi atribut readonlu disable form digunakan untuk mencegah user mengubah data, namun perbedaan antar keduanya ada didalam visualnya, disable form terlihat abu abu sedangkan readonly putih seperti halnya atribut text lainnya -->             
+                <p><input type="text" name="dengan_required" placeholder="Input required" size="25" required></p> <!-- Input type tapi terkhusukan untuk pernomeran seperi Nomer Telephone dan NIM, disini juga mengguanakn element required form yang dimana user akan dipaksa untuk mengisi nya sebelum submit -->              
+                <p><input type="email" name="email" placeholder="Masukan email anda" size="25"></p> <!-- Input type ber atribut placeholder tapi terkhususkan untuk email -->             
+                <p><input type="password" name="Password" placeholder="masukan Password anda" size="25"></p> <!-- Input type ber atribut placeholder tapi terkhuskan untuk password-->            
+                <p><input type="file" name="file"></p>
+                <p> <!-- Input type beratribut hidden, digunakan untuk menyembunyikan value dari user. -->
+                    <p>
+                        <textarea name="textarea_form" cols="30" rows="5" placeholder="Dolor Sit Amit"></textarea>
+                    </p> <!-- Textarea adalah element yang digunakan untuk memperbesar textbox dari form -->
+                       
+                    <select name="pilihan">
+                        <option value="1">pilihan 1</option>
+                        <option value="2" selected>pilihan 2</option>
+                        <option value="3">pilihan 3</option>
+                        <option value="4">pilihan 4</option>
+                        <option value="5">pilihan 5</option>
+                    </select>
+                    <!-- Element Select digunakan untuk membuat kotak dropdown yang memungkinkan user untuk memilih opsi dari beberapa pilihan -->
+                </p>
+                <p>
+                    <input type="radio" name="gender" value="male" id="'male">
+                    <label for="male">Laki-Laki</label>
+                    <input type="radio" name="gender" value="female" id="female">
+                    <label for="female"> perempuan</label>
+                </p> <!-- Element yang digunakan untuk membuat kotak tombol radio yang mengharuskan user untuk memilih salah satu opsi yang diberikan -->
+                <p>
+                    
+                    <input type="radio" name="radio" value="adult" id="'adult">
+                    <label for="adult">Dewasa</label>
+                    <input type="radio" name="radio" value="child" id="child">
+                    <label for="child"> Anak-Anak</label>
+
+                </p><!-- Element yang digunakan untuk membuat kotak tombol radio yang mengharuskan user untuk memilih salah satu opsi yang diberikan -->
+                <p>
+                    <input type="checkbox" name="checkbox" value="checkbox1" id="'checkbox1">
+                    <label for="checkbox">checkbox 1</label>
+                    <input type="checkbox" name="checkbox" value="checkbox2" id="checkbox2">
+                    <label for="checkbox2"> checkbox 2</label>
+
+                </p> <!-- Berbeda dengan radio, atribut ini memungkinkan user untuk memilihi kotak opsi secara dua sekaligus. -->
+                <p>
+                    <input type="reset" value="Reset" name="reset">     <!-- atribut reset digunakan untuk mereset semua value yang belum tersubmit, memudahkan user untuk menghapus valuenya secara bersamaan.  -->
+                    <label for="submit" value="Simpan" name="submit">     <!-- atribut yang digunakan untuk menyimpan value dari user, ini juga berhubungan dengan method get -->
+                    <input type="button" value="Button" name="button"> <!-- Atribut ini umum digunakan untuk javascript, atribut ini tidak melakukan aksi apapun jika hanya menggunakan HTML  -->
+                    
+
+                </p>
+                
+               
+            </form>
+        </div>
+        <div>
+            <h2> Element Embed</h2>
+            <embed src="assets/file.pdf" type="application/pdf" width="800" heigh="1000"><!-- Digunakan untuk memasukan file dari luar, dengan atribut src atau source yang berada didalam komputer.  -->
+
+        </div>    
+
+        <div>
+            <h2>Element Object</h2>
+            <hr/>
+            <object data="assets/file.pdf" type="application/pdf" width="800" height="1000">
+
+            </object>     <!-- Sama seperti element embed, namu disini menggunakan atribut data, dan sangat flesibel untuk tata letak sebuah website. -->
+        </div>
+        <div>
+            <h2>Element Iframe</h2>
+            <hr>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/v8fKPAIVObY?si=-bSV03DpJck3za8M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.376411811261!2d112.72591657476103!3d-7.311542092696369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fbd1cb925a1d%3A0x1dbecb0b2e9b059f!2sUniversitas%20Telkom%20Surabaya!5e0!3m2!1sid!2sid!4v1709773950787!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
+        </div> <!-- Berbedan dengan atribut video, Element iframe digunakan untuk memasukan konten yang berada di internet menggunakan link EMBED, bisa juga menampilkan sebuah konten dari Google Maps. -->
+        <div>
+            <h2> Element Semantic html 5</h2><!-- Elemen semantik HTML5 adalah elemen-elemen yang dirancang untuk memberikan makna semantik kepada konten web. Dengan menggunakan elemen semantik, pengembang web dapat memberikan informasi yang lebih kaya tentang struktur dan konten halaman web kepada mesin pencari, pembaca layar, dan pengembang lainnya. Ini membantu meningkatkan aksesibilitas, SEO, dan pemeliharaan kode. -->
+            <header>Ini Header</header>
+            <nav>Ini navigation</nav>
+            <section>ini section</section>
+            <aside>ini aside</aside>
+            <footer>ini footer</footer>
+            
+        </div>
+    </body>
+</html>
